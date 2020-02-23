@@ -5,13 +5,14 @@
 }
 body {
     overflow-x: hidden;
-    background-image:url(/img/backimg.png);
+    background-image:url(/img/backimg1.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+   
 }
 img {
-    width: 100%;
+    max-width: 100%;
 }
 .container {
     width: 100%;
@@ -21,6 +22,7 @@ img {
 }
 .main {
     margin-top: -103px;
+  
 }
 // header {
 //     display: flex;
@@ -44,8 +46,10 @@ img {
 }
 .hidden-img {
     visibility: hidden;
+    max-width: 100%;
 }
 .img-container {
+    height: 1000px;
     background-image: url(/img/banner.png);
     background-position: center center;
     background-repeat: no-repeat;
@@ -64,14 +68,14 @@ img {
     text-transform: uppercase;
     font-size: 50px;
     text-decoration: none;
-    background-color: #33362f;
-    opacity: 0.7;
+    background-color: rgba($color: #5d6942, $alpha: 0.5);
+    
     
 }
 .banner-heading {
     position: absolute;
-    top: 60%;
-    right: 10%;
+    top: 40%;
+    right: 17%;
     color: #9baf6d;
     h1 {
         text-align: center;
@@ -85,7 +89,7 @@ img {
         font-size: 80px;
         font-weight: bold;
         text-transform: uppercase;
-        margin-bottom: 120px;
+        margin-bottom: 145px;
     }
 }
 .what-we-cook {
@@ -93,13 +97,15 @@ img {
     justify-content: space-between;
     flex-direction: row-reverse;
     align-items: center;
+    
     img {
+        height: 490px;
         width: 40%;
         display: block;
     }
     .text-content {
-        width: 40%;
-        padding:40px 100px;
+        width: 50%;
+        padding-left: 100px;
         h4 {
             color: #afc67b;
             font-size: 22px;
@@ -129,7 +135,7 @@ img {
     }
 }
 .section-new {
-    padding: 80px 0;
+    padding: 100px 0;
     background-color: #4e5342;
     opacity: 0.8;
     .row {
@@ -138,12 +144,12 @@ img {
     }
 }
 .menu {
-    padding: 80px 0;
+    padding: 90px 0;
     opacity: 0.8;
 }
 .menu-heading {
     text-align: center;
-    padding: 50px 0;
+    padding: 70px 0;
     h3 {
         font-size: 40px;
         color: #afc67b;
@@ -167,6 +173,9 @@ img {
     flex-direction: row;
     align-items: center;
     width: 50%;
+    img {
+        width: 100%;
+    }
     .menu-article-text {
         padding: 50px 0;
         text-align: center;
@@ -185,5 +194,71 @@ img {
 .reverse {
     
     flex-direction: row-reverse;
-}       
+} 
+.keep-things-simple {
+    padding: 115px 0 95px 0;
+    text-align: center;
+    background-color: #4e5342;
+    h4 {
+        color: #9baf6d;
+        font-size: 35px;
+    }
+    p {
+        width: 90%;
+        font-size: 20px;
+        color: white;
+        margin: 36px auto 56px auto;
+    }
+}      
+.new-menu {
+    color: #c5c6c4;
     
+    .menu-section-img {
+        background-image: url(/img/pan.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+    }
+}   
+.discover-menu-img {
+    display: flex;
+    background-color:#c5c6c4;
+    width: 84px;
+    height: 84px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+   
+}
+.discover-menu-item {
+    display: flex;
+    align-items: center;
+    min-width: 45%;
+    margin-top: 55px;
+    h4 {
+        margin-bottom: 17px;
+    }
+    p {
+        width: 70%;
+    }
+}
+.menu-item-text {
+    margin-left: 10px;
+}
+.discover-menu {
+    
+    transform: translate(0%,-230%);
+    background-color: #4e5342;
+    .discover-menu-heading {
+    padding: 45px 0;
+    text-align: center;
+    font-size: 45px;
+    }
+    .discover-menu-items {
+        padding: 0 100px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
