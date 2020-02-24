@@ -6,10 +6,6 @@
 
 body {
   overflow-x: hidden;
-  background-image: url(/img/backimg1.jpg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 img {
@@ -25,6 +21,10 @@ img {
 
 .main {
   margin-top: -103px;
+  background-image: url(/img/backimg1.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .navigation ul {
@@ -215,8 +215,7 @@ img {
 
 .new-menu {
   color: #c5c6c4;
-}
-.new-menu .menu-section-img {
+  position: relative;
   background-image: url(/img/pan.png);
   background-position: center center;
   background-repeat: no-repeat;
@@ -236,7 +235,7 @@ img {
 .discover-menu-item {
   display: flex;
   align-items: center;
-  min-width: 45%;
+  width: 45%;
   margin-top: 55px;
 }
 .discover-menu-item h4 {
@@ -248,10 +247,12 @@ img {
 
 .menu-item-text {
   margin-left: 10px;
+  width: 70%;
 }
 
 .discover-menu {
-  transform: translate(0%, -230%);
+  position: absolute;
+  top: 240px;
   background-color: #4e5342;
 }
 .discover-menu .discover-menu-heading {
@@ -260,10 +261,122 @@ img {
   font-size: 45px;
 }
 .discover-menu .discover-menu-items {
-  padding: 0 100px;
+  width: 80%;
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  padding-bottom: 60px;
+}
+
+.book-here {
+  color: #fff;
+  padding: 50px 0;
+}
+.book-here h3 {
+  text-align: center;
+  margin-bottom: 45px;
+  font-size: 40px;
+}
+.book-here .input-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 45px;
+}
+.book-here form {
+  margin: 0 auto;
+  width: 100%;
+}
+.book-here form input {
+  border-radius: 7px;
+  border-width: solid;
+  width: 240px;
+  height: 31px;
+  display: block;
+  margin-top: 10px 0;
+  background-color: transparent;
+  color: #fff;
+  font-size: 13px;
+  padding-left: 5px;
+}
+.book-here form select {
+  font-size: 13px;
+  color: #fff;
+  display: block;
+  width: 240px;
+  height: 31px;
+  margin: 10px 0;
+  background-color: transparent;
+  border-radius: 7px;
+  border-width: 2px;
+}
+.book-here form label {
+  margin-bottom: 10px;
+  font-size: 13px;
+  display: block;
+}
+.book-here form .sub-button {
+  margin: 0 auto;
+  text-transform: uppercase;
+}
+
+.food-poster {
+  background-image: url(/img/pan2.png);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.menu2 {
+  background-color: rgba(78, 83, 66, 0.5);
+  padding: 45px 0 125px 0;
+}
+.menu2 h3 {
+  font-size: 40px;
+  text-align: center;
+  color: #afc67b;
+}
+.menu2 .menu2-heading {
+  margin-bottom: 55px;
+  text-align: center;
+  font-size: 35px;
+  color: #fff;
+}
+.menu2 .menu-card {
+  width: 30%;
+}
+.menu2 .menu-card img {
+  width: 100%;
+}
+.menu2 .row {
+  display: flex;
+  justify-content: space-between;
+}
+.menu2 .menu-card-text-content {
+  background: #fff;
+  padding: 30px 25px;
+}
+.menu2 .menu-card-heading {
+  margin-bottom: 30px;
+}
+.menu2 h4 {
+  margin-bottom: 12px;
+}
+.menu2 p {
+  margin-bottom: 30px;
+}
+.menu2 a {
+  color: #555555;
+  font-weight: bold;
+  text-decoration: none;
+}
+.menu2 .read-more-button {
+  padding-bottom: 2px;
+  border-bottom: 4px solid #afc67b;
+}
+
+.social {
+  padding: 50px 0;
 }
 
 /*# sourceMappingURL=style.css.map */
